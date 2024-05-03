@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_60b594c53e6576d7c8ddb5e50d8d0932 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_60b594c53e6576d7c8ddb5e50d8d0932" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_60b594c53e6576d7c8ddb5e50d8d0932 = L.map(
+                "map_60b594c53e6576d7c8ddb5e50d8d0932",
+                {
+                    center: [40.7233, -73.99855],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_76af668fed335924c1fa8ae1162a6079 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_76af668fed335924c1fa8ae1162a6079.addTo(map_60b594c53e6576d7c8ddb5e50d8d0932);
+        
+    
+            var marker_fea057de7bef35cbfd006d8083409cdf = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_60b594c53e6576d7c8ddb5e50d8d0932);
+        
+    
+        var popup_bce65b05f3593a76b79ad2a3d33c0e11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a80faac3763e8538f7bae7c0a9f8c87 = $(`<div id="html_8a80faac3763e8538f7bae7c0a9f8c87" style="width: 100.0%; height: 100.0%;">Restaurant A</div>`)[0];
+                popup_bce65b05f3593a76b79ad2a3d33c0e11.setContent(html_8a80faac3763e8538f7bae7c0a9f8c87);
+            
+        
+
+        marker_fea057de7bef35cbfd006d8083409cdf.bindPopup(popup_bce65b05f3593a76b79ad2a3d33c0e11)
+        ;
+
+        
+    
+    
+            var marker_6c47e547a7d69334a090986789d0ef7e = L.marker(
+                [40.7338, -73.9911],
+                {}
+            ).addTo(map_60b594c53e6576d7c8ddb5e50d8d0932);
+        
+    
+        var popup_1ae8912564a9d0ad9a3e9a98e7d8010e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39ef1b023dfda682c50b8659e02aaf20 = $(`<div id="html_39ef1b023dfda682c50b8659e02aaf20" style="width: 100.0%; height: 100.0%;">Restaurant B</div>`)[0];
+                popup_1ae8912564a9d0ad9a3e9a98e7d8010e.setContent(html_39ef1b023dfda682c50b8659e02aaf20);
+            
+        
+
+        marker_6c47e547a7d69334a090986789d0ef7e.bindPopup(popup_1ae8912564a9d0ad9a3e9a98e7d8010e)
+        ;
+
+        
+    
+</script>
+</html>
