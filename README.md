@@ -17,8 +17,4 @@ CuisineQuest aims to identify, analyze, and model the key elements that contribu
 
 **Technologies Used:**
 - Python (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn)
-- SQL for data querying
-- Tableau or Power BI for dashboard creation
-- Natural Language Processing tools for sentiment analysis
-
 
